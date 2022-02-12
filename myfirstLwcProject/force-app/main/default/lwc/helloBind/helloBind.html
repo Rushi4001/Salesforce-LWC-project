@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="HelloBinding" icon-name="custom:custom15">
+        <div class="slds-p-horizontal_small">
+            <p>Hello,{h1}</p>
+            <lightning-input
+                label="Name"
+                value={h1}
+                onchange={handlechange}
+            ></lightning-input>
+        </div>
+        <p slot="footer">hello admin welcome to the HelloBinding page</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Used car.com">
+        <lightning-button label="cars details" onclick={handleclick}>
+        </lightning-button>
+        <lightning-accordion 
+        active-section-name={section}
+        onsectiontoggle={handleSectionToggle}
+        >
+            <lightning-accordion-section name="Seller Datails" label="Seller Datails">
+                <p>Hello by using below link you can see details of Seller who to Sell his her car
+                    <lightning-breadcrumb
+                    label="Seller Details"
+                    href="https://nellinfotech70-dev-ed.lightning.force.com/lightning/o/Seller__c/list?filterName=00B5j00000DtsIbEAJ">
+                    </lightning-breadcrumb>
+                </p>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="Buyers Details" label="Buyers Details">
+                <p>Hello by using below link you can see details of Seller who to Sell his her car
+                    <lightning-breadcrumb
+                    label="Buyers Details"
+                    href="https://nellinfotech70-dev-ed.lightning.force.com/lightning/o/Buyers_detail__c/list?filterName=00B5j00000Du7ZHEAZ">
+                    </lightning-breadcrumb>
+                </p>
+            </lightning-accordion-section>
+            
+            <lightning-accordion-section name="Cars Details" label="Cars Details">
+                <p>Hello by using below link you can see details of Seller who to Sell his her car
+                    <lightning-breadcrumb
+                    label="Car Details"
+                    href="https://nellinfotech70-dev-ed.lightning.force.com/lightning/o/Car_Information__c/list?filterName=00B5j00000DuE0XEAV">
+                    </lightning-breadcrumb>
+                </p>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </lightning-card>
+</template>
